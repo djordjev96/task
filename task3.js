@@ -6,6 +6,7 @@ const smallestDivisor = (nums, threshold) => {
   for (i = divisor; i <= maxDivisor; i++) {
     let sum = 0;
     for (let j = 0; j <= nums.length; j++) {
+      // on line 8 it should be < nums.length, not <= nums.length. sorry my bad
       sum += Math.ceil(nums[j] / i);
     }
 
